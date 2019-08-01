@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Pedidos - Clube Da Pesca</title>
+	<meta charset="utf-8" />
+</head>
+
+<body bgcolor="#4169E1" link="#f2f2f2" alink="#1a1aff" vlink="#f2f2f2">
+
+	<font size="6" face="Arial" color="#ffffff">
+		<center>
+			<h1>Clube Da Pesca</h1>
+		</center>
+	</font>
+
+	<hr color="#ffffff">
+
+	<font size="" face="Arial" color="#ffffff">
+
+		<h2>Pedidos</h2>
+
+		<p align="justify">Aqui você pode fazer seus pedidos e fazer a compra. </p>
+
+	</font>
+
+	<form name="Pedidos" method="" action=""><!--Tag de formulário-->
+
+		<font size="" face="Arial" color="#ffffff">
+
+			<p><label name="nome" id="nome">Nome: </label> <!--A tag label define um rotulo para determinado input-->
+				<input type="text" name="nome" id="nome" size="70" maxlength="50" required="required" /></p> <!--Usados para determinar um controle de entrada-->
+				<!--A TAG requird significa que o usuário é obrigado a prencher aquele campo-->
+
+			<p><label name="endereco" id="endereco">Endereço: </label>
+				<input type="address" name="endereco" required="required" />
+
+				<label name="numero" id="numero">Número: </label>
+				<input type="number" name="numero" required="required" min="0"></p>
+
+			<p><label name="uf" id="uf">UF: </label>
+				<select name="uf" id="uf"><!--Tag para quando for fazer um comando de seleçao-->
+					<option value="selecione">Selecione</option><!--Opçoes do comando select-->
+					<option value="df">DF</option>
+					<option value="ce">CE</option>
+					<option value="go">GO</option>
+					<option value="mt">MT</option>
+					<option value="pb">PB</option>
+					<option value="sp">SP</option>
+					<option value="rj">RJ</option>
+				</select>
+
+				<label name="cep" id="cep">CEP: </label>
+				<input type="text" name="cep" placeholder="99.999-999" pattern="[0-9]{2}.[0-9]{3}-[0-9]{3}$"
+					required="required" />
+
+				<label name="data" id="data">Data:</label>
+				<input type="date" name="data" id="data" />
+			</p>
+
+			<fieldset> <!--Tag para fazer uma "Caixa de fio"-->
+
+				<legend>Produtos: </legend><!--Legenda usada para a fildset-->
+				<p>
+					<label name="descricao" id="descricao">Descrição: </label>
+					<select name="descricao" id="descricao">
+
+						<option value="selecione">Selecione</option>
+						<option value="kit de pesca">Kit de pesca</option>
+						<option value="caixa salva vidas">Caixa salva vidas</option>
+						<option value="anzol">Anzol</option>
+						<option value="alicate">Alicate</option>
+
+					</select>
+
+					<label name="quantidade" id="quantidade">Quantidade: </label>
+					<input type="number" name="quantidade" required="required" min="0" />
+				</p>
+
+
+				<label name="descricao" id="descricao">Descrição: </label>
+				<select name="descricao" id="descricao">
+
+					<option value="selecione">Selecione</option>
+					<option value="kit de pesca">Kit de pesca</option>
+					<option value="caixa salva vidas">Caixa salva vidas</option>
+					<option value="anzol">Anzol</option>
+					<option value="alicate">Alicate</option>
+
+				</select>
+
+				<label name="quantidade" id="quantidade">Quantidade: </label>
+				<input type="number" name="quantidade" min="0" />
+				</p>
+
+
+				<label name="descricao" id="descricao">Descrição: </label>
+				<select name="descricao" id="descricao">
+
+					<option value="selecione">Selecione</option>
+					<option value="kit de pesca">Kit de pesca</option>
+					<option value="caixa salva vidas">Caixa salva vidas</option>
+					<option value="anzol">Anzol</option>
+					<option value="alicate">Alicate</option>
+
+				</select>
+
+				<label name="quantidade" id="quantidade">Quantidade: </label>
+				<input type="number" name="quantidade" min="0">
+				</p>
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend>Forma de Pagamento:</legend>
+				<p><input type="radio" id="formasdepagamento" name="formasdepagamento" value="dinheiro" />Dinheiro</p>
+				<p><input type="radio" id="formasdepagamento" name="formasdepagamento" value="credito" />Crédito</p>
+				<p><input type="radio" id="formasdepagamento" name="formasdepagamento" value="debito" />Débito</p>
+
+			</fieldset>
+
+			<p><label name="observacao" id="observacao">Obeservação: </label></p>
+			<p><textarea name="observacao" id="observacao" cols="70" rows="4"> </textarea></p>
+
+			<input type="submit" name="comprar" id="comprar" value="Comprar" />
+			<input type="reset" name="cancelar" id="cancelar" value="Cancelar" />
+
+
+		</font>
+
+		<hr color="#ffffff">
+
+		<Center>
+
+			<font size="" face="Arial" color="#ffffff">
+
+				<p>Desenvolvido por <a href="#">Lucas Mateus Silva</a> - 2019</p>
+				<a href="site-puro.html">Voltar para Home</a>
+			</font>
+		</Center>
+
+		</form>
+
+</body>
+
+</html>
