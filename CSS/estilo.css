@@ -1,0 +1,87 @@
+body{
+  font-family: Arial;
+  padding: 10px;
+  background: #ffb74d;
+}
+.header{
+    background-color: #ffe0b2;
+    text-align: center;
+    padding: 10px;
+}
+.titulo{
+    outline-style: solid;
+    outline-color: #fb8c00;
+    margin: 0;
+    padding: 0;
+    
+}
+.capa{
+    width: 500px;
+    height: 250px;
+    margin-left: 100px;
+    
+}
+.capa2{
+
+    width: 600px;
+    height: 250px;
+    margin-left: 100px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #fb8c00;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 44.5px;
+  text-decoration: none;
+}
+.topnav a:hover{
+    background-color: #fdd835;
+    color: black;
+}
+.leftcolumn{
+    float: left;
+    width: 70%;
+}
+.rightcolumn{
+    float: left;
+    width: 28%;
+    padding-left: 20px;
+}
+.imag{
+    background-color: #ffd180;
+    width: 95%;
+    padding: 15px;
+}
+.card{
+    background-color: #ffe0b2;
+    padding: 10px;
+    margin-top: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #fb8c00;
+    margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
